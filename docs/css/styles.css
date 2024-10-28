@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* 布局样式 */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    color: #0066cc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover {
+    background-color: #e0e7ff;
+    color: #003366;
+}
+
+/* 主内容区 */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    color: #004c99;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.main-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.main-content li {
+    margin-bottom: 8px;
+}
+
+/* 代码块样式 */
+pre, code {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    overflow-x: auto;
+    display: block;
+}
+
+/* 按钮样式 */
+button, .button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #004c99;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
